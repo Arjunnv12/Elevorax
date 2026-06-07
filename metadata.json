@@ -1,0 +1,6 @@
+{
+  "name": "Elevorax Institute",
+  "description": "Premium landing page for Elevorax Institute offering elite Java and Python courses with a dynamic interactive elevator animation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

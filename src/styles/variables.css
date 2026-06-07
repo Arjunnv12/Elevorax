@@ -1,0 +1,53 @@
+:root {
+  --bg: #f5f5f7;
+  --green: #059669;
+  --purple: #7c3aed;
+  --amber: #ea580c;
+  --shaft-bg: #01010e;
+}
+
+/* Custom typography definitions */
+.font-syne {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+}
+
+.font-space {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Headline Gradients from Immersive UI */
+.gradient-text-1 {
+  background: linear-gradient(to right, var(--green), #0ea5e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-2 {
+  background: linear-gradient(to right, var(--purple), var(--amber));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.word-first {
+  background: #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.word-learning {
+  background: #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.word-hub {
+  background: #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

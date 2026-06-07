@@ -1,0 +1,261 @@
+/* App container background rules */
+.app-container {
+  background-color: var(--bg);
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(124, 58, 237, 0.08) 0, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(0, 255, 136, 0.05) 0, transparent 40%);
+  background-attachment: fixed;
+}
+
+/* Glassmorphism backgrounds */
+.glass-nav {
+  height: 72px; /* Precision constraint from Immersive UI template */
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.04);
+}
+
+/* Navigation elements from Immersive UI */
+.logo-text {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  background: linear-gradient(to right, #000000, #475569);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+}
+.nav-link-custom {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: rgba(15, 23, 42, 0.7);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.nav-link-custom:hover {
+  color: #000000;
+}
+
+/* Button Themes from Immersive UI */
+.enroll-btn-navbar {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.enroll-btn-navbar:hover {
+  transform: scale(1.02);
+  opacity: 0.95;
+}
+
+.btn-primary {
+  background-color: var(--green);
+  color: #ffffff !important;
+  padding: 14px 28px;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: transform 0.2s, opacity 0.2s, box-shadow 0.2s;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(5, 150, 105, 0.25);
+}
+
+.btn-outline {
+  border: 1px solid rgba(15, 23, 42, 0.15);
+  color: #0f172a !important;
+  padding: 14px 28px;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 14px;
+  background: transparent;
+  letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+.btn-outline:hover {
+  transform: translateY(-2px);
+  background: rgba(15, 23, 42, 0.05);
+  border-color: rgba(15, 23, 42, 0.3);
+}
+
+/* Animated Badge from Immersive UI */
+.immersive-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: rgba(0, 255, 136, 0.1);
+  border: 1px solid rgba(0, 255, 136, 0.2);
+  border-radius: 9999px;
+  margin-bottom: 24px;
+}
+.immersive-badge-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--green);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--green);
+}
+.immersive-badge-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Stat row precision spec design */
+.stats-row {
+  display: flex;
+  gap: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(15, 23, 42, 0.1);
+  font-size: 13px;
+  color: rgba(15, 23, 42, 0.6);
+}
+
+/* Custom Elevator Shaft with pseudo rail lines */
+.shaft {
+  width: 90px;
+  height: 100%;
+  background: var(--shaft-bg);
+  border-left: 2px solid rgba(124, 58, 237, 0.3);
+  border-right: 2px solid rgba(124, 58, 237, 0.3);
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.shaft::before, .shaft::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: repeating-linear-gradient(to bottom, var(--purple) 0, var(--purple) 4px, transparent 4px, transparent 8px);
+  opacity: 0.3;
+}
+.shaft::before { left: 4px; }
+.shaft::after { right: 4px; }
+
+/* Ground Line from Immersive UI */
+.elevator-ground-line {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--purple), var(--green), transparent);
+  box-shadow: 0 0 15px var(--green);
+  z-index: 15;
+}
+
+/* Code snippets glass look-and-feel */
+.code-snippet {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+  z-index: 12;
+}
+
+/* Glowing accents */
+.neon-shadow-amber {
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.15);
+}
+.neon-shadow-green {
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.15);
+}
+.neon-shadow-purple {
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.15);
+}
+
+/* Grid pattern */
+.grid-pattern {
+  background-image: 
+    linear-gradient(rgba(0, 255, 136, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 136, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Card custom styles */
+.card-lift {
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.card-lift:hover {
+  transform: translateY(-5px);
+}
+
+/* Quick modal styles */
+.modal-blur {
+  background-color: rgba(5, 5, 8, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Milestone trackers */
+.level-sidebar {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.level-card-custom {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 1rem;
+  padding: 1.15rem;
+  display: flex;
+  gap: 1.15rem;
+  align-items: flex-start;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.02);
+}
+
+.level-card-active {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(15, 23, 42, 0.12);
+  transform: translateX(8px);
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08);
+}
+
+@media (max-width: 1023px) {
+  .level-card-active {
+    transform: translateY(-3px);
+  }
+}
