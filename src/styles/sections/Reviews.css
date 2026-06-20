@@ -1,0 +1,19 @@
+/* Per-section styles for Reviews */
+.reviews-section {
+  padding: 3rem 0;
+}
+
+.reviews-section .glass-card {
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease;
+}
+.reviews-section .glass-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(124, 58, 237, 0.12);
+}
+
+.reviews-section .testimonial-quote {
+  color: #374151;
+  font-style: italic;
+}

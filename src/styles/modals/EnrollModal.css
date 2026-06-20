@@ -1,0 +1,14 @@
+/* Styles specific to EnrollModal component */
+.enroll-modal-local {
+  --modal-bg: rgba(13, 13, 21, 0.9);
+}
+
+#enroll-modal-box {
+  max-width: 640px;
+}
+
+#enroll-modal-box input,
+#enroll-modal-box select {
+  background: #06060a;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}

@@ -1,5 +1,6 @@
-import { Play } from 'lucide-react';
-import elementImg from '../../data/Element.png';
+import { Play } from "lucide-react";
+import elementImg from "../../data/Element.png";
+import "../../styles/home/HeroIntro.css";
 
 interface HeroIntroProps {
   onWatchDemoClick: () => void;
@@ -8,10 +9,8 @@ interface HeroIntroProps {
 export default function HeroIntro({ onWatchDemoClick }: HeroIntroProps) {
   return (
     <div className="relative flex flex-col items-start text-left max-w-xl md:max-w-full lg:pr-6 min-h-[calc(100vh-140px)] justify-center py-8">
-
       {/* Hero Image + Heading */}
       <div className="relative w-full flex justify-center mt-35 mb-30">
-
         <img
           src={elementImg}
           alt="Elevorax Element Background"
@@ -44,13 +43,10 @@ export default function HeroIntro({ onWatchDemoClick }: HeroIntroProps) {
     translate-x-22
   "
           style={{
-            fontSize: 'clamp(2.8rem, 4.4vw, 5rem)',
+            fontSize: "clamp(2.8rem, 4.4vw, 5rem)",
           }}
         >
-          <span
-            className="block"
-            style={{ color: '#ffffff' }}
-          >
+          <span className="block" style={{ color: "#ffffff" }}>
             Kerala's
           </span>
 
@@ -76,8 +72,7 @@ export default function HeroIntro({ onWatchDemoClick }: HeroIntroProps) {
           max-w-lg
           font-light
         "
-      >
-      </p>
+      ></p>
 
       {/* Buttons */}
       <div
@@ -105,10 +100,7 @@ export default function HeroIntro({ onWatchDemoClick }: HeroIntroProps) {
           onClick={onWatchDemoClick}
           className="btn-outline w-full sm:w-auto"
         >
-          <Play
-            size={16}
-            className="fill-slate-900"
-          />
+          <Play size={16} className="fill-slate-900" />
           Watch Demo
         </button>
       </div>

@@ -1,0 +1,8 @@
+/* Styles specific to Footer component */
+.footer-local {
+  padding: 2.5rem 0;
+}
+
+.footer-local .footer-links a {
+  color: #6b7280;
+}

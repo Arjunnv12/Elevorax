@@ -1,0 +1,19 @@
+/* Styles specific to LevelSidebar component */
+.level-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.level-sidebar .level-card-custom {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.level-sidebar .level-card-active {
+  transform: translateX(6px);
+}
+
+.level-sidebar .level-card-custom p {
+  color: #475569;
+}
