@@ -1,6 +1,10 @@
 /* Styles specific to Navbar component */
 .glass-nav {
   backdrop-filter: blur(8px);
+  background-image: url('../../assets/Gemini_Generated_Image_o1ujlbo1ujlbo1uj.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .nav-link-custom {
@@ -8,6 +12,7 @@
     color 0.2s ease,
     transform 0.15s ease;
 }
+
 .nav-link-custom:hover {
   transform: translateY(-2px);
 }
@@ -15,4 +20,5 @@
 /* Mobile menu overrides */
 .mobile-menu {
   padding: 1rem 1.25rem;
+  list-style: none;
 }
