@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../../styles/layout/Navbar.css";
-import logo from "../../assets/Elvorax High.png";
+import logo from "../../assets/Elvorax High White.png";
 import { Menu, X } from "lucide-react";
 
 interface NavbarProps {
@@ -21,7 +21,7 @@ export default function Navbar({ activeSection, triggerEnroll }: NavbarProps) {
   return (
     <nav
       id="navbar"
-      className="fixed top-0 left-0 right-0 z-50 glass-nav h-[72px] transition-all duration-300"
+      className="absolute top-0 left-0 right-0 z-50 glass-nav h-[72px] transition-all duration-300"
     >
       <div className="w-full h-full px-6 lg:px-12 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-4 group select-none">

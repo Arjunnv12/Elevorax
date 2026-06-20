@@ -1,7 +1,7 @@
 /* App container background rules */
 .app-container {
   background-color: var(--bg);
-  background-image: 
+  background-image:
     radial-gradient(circle at 10% 20%, rgba(124, 58, 237, 0.08) 0, transparent 40%),
     radial-gradient(circle at 90% 80%, rgba(0, 255, 136, 0.05) 0, transparent 40%);
   background-attachment: fixed;
@@ -9,12 +9,14 @@
 
 /* Glassmorphism backgrounds */
 .glass-nav {
-  height: 72px; /* Precision constraint from Immersive UI template */
+  height: 72px;
+  /* Precision constraint from Immersive UI template */
   background-color: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(15, 23, 42, 0.08);
 }
+
 .glass-card {
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(8px);
@@ -33,17 +35,21 @@
   -webkit-text-fill-color: transparent;
   letter-spacing: 1px;
 }
+
 .nav-link-custom {
+  font-family: 'Syne', sans-serif;
   text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 800;
   letter-spacing: 0.04em;
-  color: rgba(15, 23, 42, 0.7);
+  color: rgb(248, 250, 253);
   cursor: pointer;
   transition: color 0.3s;
 }
+
 .nav-link-custom:hover {
-  color: #000000;
+  color: #00ff88;
+  font-weight: 800;
 }
 
 /* Button Themes from Immersive UI */
@@ -58,6 +64,7 @@
   cursor: pointer;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
+
 .enroll-btn-navbar:hover {
   transform: scale(1.02);
   opacity: 0.95;
@@ -78,6 +85,7 @@
   gap: 8px;
   transition: transform 0.2s, opacity 0.2s, box-shadow 0.2s;
 }
+
 .btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(5, 150, 105, 0.25);
@@ -98,6 +106,7 @@
   gap: 8px;
   transition: transform 0.2s, background-color 0.2s;
 }
+
 .btn-outline:hover {
   transform: translateY(-2px);
   background: rgba(15, 23, 42, 0.05);
@@ -115,6 +124,7 @@
   border-radius: 9999px;
   margin-bottom: 24px;
 }
+
 .immersive-badge-dot {
   width: 8px;
   height: 8px;
@@ -122,6 +132,7 @@
   border-radius: 50%;
   box-shadow: 0 0 10px var(--green);
 }
+
 .immersive-badge-text {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 11px;
@@ -153,7 +164,9 @@
   display: flex;
   justify-content: center;
 }
-.shaft::before, .shaft::after {
+
+.shaft::before,
+.shaft::after {
   content: '';
   position: absolute;
   top: 0;
@@ -162,8 +175,14 @@
   background: repeating-linear-gradient(to bottom, var(--purple) 0, var(--purple) 4px, transparent 4px, transparent 8px);
   opacity: 0.3;
 }
-.shaft::before { left: 4px; }
-.shaft::after { right: 4px; }
+
+.shaft::before {
+  left: 4px;
+}
+
+.shaft::after {
+  right: 4px;
+}
 
 /* Ground Line from Immersive UI */
 .elevator-ground-line {
@@ -196,16 +215,18 @@
 .neon-shadow-amber {
   box-shadow: 0 0 15px rgba(245, 158, 11, 0.15);
 }
+
 .neon-shadow-green {
   box-shadow: 0 0 15px rgba(0, 255, 136, 0.15);
 }
+
 .neon-shadow-purple {
   box-shadow: 0 0 15px rgba(124, 58, 237, 0.15);
 }
 
 /* Grid pattern */
 .grid-pattern {
-  background-image: 
+  background-image:
     linear-gradient(rgba(0, 255, 136, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 255, 136, 0.03) 1px, transparent 1px);
   background-size: 40px 40px;
@@ -215,6 +236,7 @@
 .card-lift {
   transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
 .card-lift:hover {
   transform: translateY(-5px);
 }

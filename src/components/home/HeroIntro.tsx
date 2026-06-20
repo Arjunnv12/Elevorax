@@ -1,5 +1,6 @@
 import { Play } from "lucide-react";
 import elementImg from "../../data/Element.png";
+import exploreBtnImg from "../../assets/Explore.png";
 import "../../styles/home/HeroIntro.css";
 
 interface HeroIntroProps {
@@ -90,9 +91,14 @@ export default function HeroIntro({ onWatchDemoClick }: HeroIntroProps) {
         <a
           href="#courses"
           id="hero-explore-btn"
-          className="btn-primary w-full sm:w-auto"
+          className="btn-primary w-full sm:w-auto relative overflow-hidden flex items-center justify-center group"
         >
-          Explore Courses
+          <img 
+            src={exploreBtnImg} 
+            alt="" 
+            className="absolute inset-0 w-full h-full object-cover pointer-events-none transition-transform group-hover:scale-105" 
+          />
+          <span className="relative z-10">Explore Courses</span>
         </a>
 
         <button
