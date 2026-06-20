@@ -1,0 +1,18 @@
+/* Styles specific to Navbar component */
+.glass-nav {
+  backdrop-filter: blur(8px);
+}
+
+.nav-link-custom {
+  transition:
+    color 0.2s ease,
+    transform 0.15s ease;
+}
+.nav-link-custom:hover {
+  transform: translateY(-2px);
+}
+
+/* Mobile menu overrides */
+.mobile-menu {
+  padding: 1rem 1.25rem;
+}

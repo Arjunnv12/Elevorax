@@ -1,4 +1,5 @@
-import { levels } from '../../data/levels';
+import { levels } from "../../data/levels";
+import "../../styles/home/LevelSidebar.css";
 
 interface LevelSidebarProps {
   activeIdx: number;
@@ -17,7 +18,8 @@ export default function LevelSidebar({ activeIdx }: LevelSidebarProps) {
         </span>
       </h2>
       <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-6 font-light max-w-md">
-        Watch the avatar ascend from writing syntax basics at Floor 00 to unlocking career placements as you scroll down the page.
+        Watch the avatar ascend from writing syntax basics at Floor 00 to
+        unlocking career placements as you scroll down the page.
       </p>
 
       {/* Level List */}
@@ -27,9 +29,9 @@ export default function LevelSidebar({ activeIdx }: LevelSidebarProps) {
           return (
             <div
               key={idx}
-              className={`level-card-custom ${isActive ? 'level-card-active' : 'opacity-35'}`}
+              className={`level-card-custom ${isActive ? "level-card-active" : "opacity-35"}`}
               style={{
-                boxShadow: isActive ? `0 4px 20px -5px ${level.glow}` : 'none'
+                boxShadow: isActive ? `0 4px 20px -5px ${level.glow}` : "none",
               }}
             >
               {/* Status Indicator */}
@@ -43,8 +45,10 @@ export default function LevelSidebar({ activeIdx }: LevelSidebarProps) {
                 <div
                   className="w-2.5 h-2.5 rounded-full transition-all duration-300"
                   style={{
-                    backgroundColor: isActive ? level.color : 'rgba(15, 23, 42, 0.1)',
-                    boxShadow: isActive ? `0 0 10px ${level.color}` : 'none'
+                    backgroundColor: isActive
+                      ? level.color
+                      : "rgba(15, 23, 42, 0.1)",
+                    boxShadow: isActive ? `0 0 10px ${level.color}` : "none",
                   }}
                 />
               </div>
@@ -53,7 +57,9 @@ export default function LevelSidebar({ activeIdx }: LevelSidebarProps) {
               <div>
                 <h3 className="text-sm font-bold font-syne text-slate-900 tracking-wide flex items-center gap-2">
                   {level.title}
-                  <span className="text-xs font-normal text-gray-500 font-space">&mdash; {level.subtitle}</span>
+                  <span className="text-xs font-normal text-gray-500 font-space">
+                    &mdash; {level.subtitle}
+                  </span>
                 </h3>
                 <p className="text-gray-600 text-xs sm:text-sm font-light mt-1 leading-relaxed">
                   {level.desc}

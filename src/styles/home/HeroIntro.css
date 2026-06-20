@@ -1,0 +1,17 @@
+/* Styles specific to HeroIntro component */
+.hero-intro {
+  padding: 2.5rem 0;
+}
+
+.hero-intro #hero-headline {
+  color: #fff;
+  line-height: 1.02;
+}
+
+.hero-intro #hero-subtext {
+  color: #94a3b8;
+}
+
+.hero-intro .stats-row p {
+  color: #111827;
+}

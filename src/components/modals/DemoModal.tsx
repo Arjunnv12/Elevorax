@@ -1,4 +1,5 @@
-import { X } from 'lucide-react';
+import { X } from "lucide-react";
+import "../../styles/modals/DemoModal.css";
 
 interface DemoModalProps {
   isOpen: boolean;
@@ -9,8 +10,8 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
   if (!isOpen) return null;
 
   return (
-    <div 
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 modal-blur" 
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 modal-blur"
       onClick={onClose}
     >
       {/* Modal Container */}

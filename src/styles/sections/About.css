@@ -1,0 +1,23 @@
+/* Per-section styles for About */
+.about-section {
+  padding: 3rem 0;
+}
+
+.about-section .glass-card {
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease;
+}
+.about-section .glass-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(2, 6, 23, 0.18);
+}
+
+.about-section .feature-title {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.about-section .feature-desc {
+  color: #4b5563;
+}

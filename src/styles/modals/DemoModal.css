@@ -1,0 +1,12 @@
+/* Styles specific to DemoModal component */
+.demo-modal-local {
+  --demo-modal-max: 1024px;
+}
+
+#demo-modal-box {
+  max-width: var(--demo-modal-max);
+}
+
+#demo-modal-box iframe {
+  background: #000;
+}

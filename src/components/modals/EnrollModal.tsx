@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { X, Briefcase, Check } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import "../../styles/modals/EnrollModal.css";
+import { X, Briefcase, Check } from "lucide-react";
 
 interface EnrollModalProps {
   isOpen: boolean;
@@ -7,11 +8,15 @@ interface EnrollModalProps {
   selectedCourse: string;
 }
 
-export default function EnrollModal({ isOpen, onClose, selectedCourse }: EnrollModalProps) {
+export default function EnrollModal({
+  isOpen,
+  onClose,
+  selectedCourse,
+}: EnrollModalProps) {
   const [course, setCourse] = useState(selectedCourse);
-  const [studentName, setStudentName] = useState('');
-  const [studentEmail, setStudentEmail] = useState('');
-  const [studentPhone, setStudentPhone] = useState('');
+  const [studentName, setStudentName] = useState("");
+  const [studentEmail, setStudentEmail] = useState("");
+  const [studentPhone, setStudentPhone] = useState("");
   const [enrollSuccess, setEnrollSuccess] = useState(false);
 
   // Sync state if parent selected course changes
@@ -29,16 +34,16 @@ export default function EnrollModal({ isOpen, onClose, selectedCourse }: EnrollM
         setEnrollSuccess(false);
         onClose();
         // Clear fields
-        setStudentName('');
-        setStudentEmail('');
-        setStudentPhone('');
+        setStudentName("");
+        setStudentEmail("");
+        setStudentPhone("");
       }, 3500);
     }
   };
 
   return (
-    <div 
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 modal-blur" 
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 modal-blur"
       onClick={onClose}
     >
       {/* Modal Container */}
@@ -61,16 +66,23 @@ export default function EnrollModal({ isOpen, onClose, selectedCourse }: EnrollM
 
         {enrollSuccess ? (
           /* Success Stage */
-          <div id="enroll-success-box" className="py-8 flex flex-col items-center text-center">
+          <div
+            id="enroll-success-box"
+            className="py-8 flex flex-col items-center text-center"
+          >
             <div className="w-16 h-16 rounded-full bg-[#00ff88]/10 border border-[#00ff88]/30 flex items-center justify-center text-[#00ff88] mb-6 animate-pulse-glow">
               <Check size={32} />
             </div>
-            <h3 className="text-2xl font-bold font-syne text-white mb-2">Elevated Successfully!</h3>
+            <h3 className="text-2xl font-bold font-syne text-white mb-2">
+              Elevated Successfully!
+            </h3>
             <p className="text-gray-400 text-sm max-w-sm mb-4">
-              Thank you for submitting your core details, <span className="text-white font-medium">{studentName}</span>.
+              Thank you for submitting your core details,{" "}
+              <span className="text-white font-medium">{studentName}</span>.
             </p>
             <p className="text-gray-500 font-mono text-xs">
-              Our Career Mentors will contact you at {studentPhone} within 4 working hours.
+              Our Career Mentors will contact you at {studentPhone} within 4
+              working hours.
             </p>
           </div>
         ) : (
@@ -82,8 +94,12 @@ export default function EnrollModal({ isOpen, onClose, selectedCourse }: EnrollM
                 <Briefcase size={20} />
               </div>
               <div>
-                <h3 className="text-xl font-bold font-syne text-white">Admissions Request</h3>
-                <p className="text-xs text-gray-500">Secure your seat on the elevator car</p>
+                <h3 className="text-xl font-bold font-syne text-white">
+                  Admissions Request
+                </h3>
+                <p className="text-xs text-gray-500">
+                  Secure your seat on the elevator car
+                </p>
               </div>
             </div>
 
