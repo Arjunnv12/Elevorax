@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../../styles/layout/Navbar.css";
-import logo from "../../assets/Elvorax High.png";
+import logo from "../../assets/Gemini_Generated_Image_o1ujlbo1ujlbo1uj.png";
 import { Menu, X } from "lucide-react";
 
 interface NavbarProps {
