@@ -29,7 +29,7 @@ export default function App() {
   const [selectedCourse, setSelectedCourse] = useState(
     "Java + Python Power Bundle",
   );
-
+  // updated with new changes in the code
   // Demo modal states
   const [demoModalOpen, setDemoModalOpen] = useState(false);
 
